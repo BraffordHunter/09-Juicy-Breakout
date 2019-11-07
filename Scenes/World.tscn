@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/Halloween.wav" type="AudioStream" id=3]
 [ext_resource path="res://Scripts/paddle.gd" type="Script" id=4]
 [ext_resource path="res://Assets/Spider.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Spider or ghost voice.wav" type="AudioStream" id=6]
+[ext_resource path="res://Assets/Retro Spider.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Scenes/Ball.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/Tile.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/OstrichSans-Heavy.otf" type="DynamicFontData" id=9]
@@ -33,7 +33,7 @@ position = Vector2( 513.677, 294.906 )
 scale = Vector2( 5.22199, 4.18543 )
 texture = ExtResource( 2 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Background"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Background/Sprite"]
 stream = ExtResource( 3 )
 autoplay = true
 
@@ -51,7 +51,9 @@ texture = ExtResource( 5 )
 shape = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Spider Paddle"]
+pause_mode = 1
 stream = ExtResource( 6 )
+autoplay = true
 
 [node name="Ball" parent="." instance=ExtResource( 7 )]
 position = Vector2( 518.139, 439.485 )
@@ -62,6 +64,7 @@ position = Vector2( 518.139, 439.485 )
 polygon = PoolVector2Array( 0, 640, 0, 0, 1024, 0, 1024, 640, 1088, 640, 1088, -64, -64, -64, -64, 640, 0, 640 )
 
 [node name="Tiles" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="Pump Tiles5" type="Node2D" parent="Tiles"]
 editor/display_folded = true

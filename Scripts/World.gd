@@ -12,3 +12,4 @@ func decrease_lives():
  find_node("Lives").update_lives()
  if lives <= 0:
   get_tree().change_scene("res://Scenes/Game Over.tscn")
+ 
