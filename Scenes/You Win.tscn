@@ -1,0 +1,14 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 439.5, 223.5 )
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+margin_left = -9.0
+margin_top = -104.5
+margin_right = 288.0
+margin_bottom = 97.5
+
+[node name="Sprite" type="Sprite" parent="Node2D"]
