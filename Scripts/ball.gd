@@ -18,9 +18,11 @@ func _physics_process(delta):
  for body in bodies:
   if body.is_in_group("Tiles"):
    emit_signal("score",body.score)
-   body.queue_free()
-  if body.get_name() == "Paddle":
-   pass
+   body.queue_free() 
+   get_tree().change_scene("res://Scenes/You Win.tscn")
+ 
+  if body.get_name() == "Spider Paddle":
+   body.get_node("AudioStreamPlayer").play()
   
  if position.y > get_viewport_rect().end.y:
   emit_signal("lives")

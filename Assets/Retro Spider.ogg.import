@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Retro Spider.ogg-708ded5ebcebd69cc731646d981d559b.oggstr"
+
+[deps]
+
+source_file="res://Assets/Retro Spider.ogg"
+dest_files=[ "res://.import/Retro Spider.ogg-708ded5ebcebd69cc731646d981d559b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
