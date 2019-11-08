@@ -1,1 +1,1 @@
-This is a continuation of the Breakout assignment. A more complex version with more effects added to make the experience even better. This has more visual effects, sound effects, and gameplay effects during the game this time. 
+This is a continuation of the Breakout assignment. A more complex version with more effects added to make the experience even better. This has more visual effects, sound effects, and gameplay effects during the game this time. There will also be a definitive way to know that you have won the game. 
