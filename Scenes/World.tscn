@@ -35,11 +35,11 @@ texture = ExtResource( 2 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Background/Sprite"]
 stream = ExtResource( 3 )
-volume_db = 10.0
+volume_db = 3.0
 autoplay = true
 
 [node name="Spider Paddle" type="KinematicBody2D" parent="."]
-position = Vector2( 514.455, 532.95 )
+position = Vector2( 524.955, 549.45 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -54,11 +54,11 @@ shape = SubResource( 1 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Spider Paddle"]
 pause_mode = 1
 stream = ExtResource( 6 )
-volume_db = 5.0
+volume_db = 3.0
 autoplay = true
 
 [node name="Ball" parent="." instance=ExtResource( 7 )]
-position = Vector2( 518.139, 439.485 )
+position = Vector2( 533.139, 433.485 )
 
 [node name="Wall" type="StaticBody2D" parent="."]
 

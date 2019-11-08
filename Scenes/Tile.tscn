@@ -14,7 +14,6 @@ flag_disable_z = true
 gravity = Vector3( 0, 98, 0 )
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-scale = 3.0
 color = Color( 0.909804, 0.423529, 0.129412, 1 )
 
 [sub_resource type="AtlasTexture" id=3]
@@ -35,7 +34,6 @@ texture = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Special Effects" type="Particles2D" parent="."]
-emitting = false
 lifetime = 0.7
 explosiveness = 0.5
 process_material = SubResource( 2 )

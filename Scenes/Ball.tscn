@@ -15,7 +15,6 @@ radius = 33.0082
 position = Vector2( 499, 487 )
 mode = 2
 physics_material_override = SubResource( 1 )
-gravity_scale = 0.0
 linear_velocity = Vector2( 200, -200 )
 linear_damp = 0.0
 angular_damp = 0.0
