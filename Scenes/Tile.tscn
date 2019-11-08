@@ -1,10 +1,23 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/tile.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Angry Pumpkin.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Bats.jpg" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 41.0934, 32.5485 )
+
+[sub_resource type="ParticlesMaterial" id=2]
+emission_shape = 1
+emission_sphere_radius = 1.0
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 3.0
+color = Color( 0.909804, 0.423529, 0.129412, 1 )
+
+[sub_resource type="AtlasTexture" id=3]
 
 [node name="Tile" type="StaticBody2D" groups=[
 "Tiles",
@@ -20,3 +33,11 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
+
+[node name="Special Effects" type="Particles2D" parent="."]
+emitting = false
+lifetime = 0.7
+explosiveness = 0.5
+process_material = SubResource( 2 )
+texture = ExtResource( 3 )
+normal_map = SubResource( 3 )

@@ -18,9 +18,9 @@ func _physics_process(delta):
  for body in bodies:
   if body.is_in_group("Tiles"):
    emit_signal("score",body.score)
-   body.queue_free() 
-   get_tree().change_scene("res://Scenes/You Win.tscn")
- 
+   body.find_node("Special Effects").emitting=true
+
+   body.queue_free()
   if body.get_name() == "Spider Paddle":
    body.get_node("AudioStreamPlayer").play()
   

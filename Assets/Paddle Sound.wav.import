@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Paddle Sound.wav-f5108f5148c2b623c985c6a146fcb426.sample"
+
+[deps]
+
+source_file="res://Assets/Paddle Sound.wav"
+dest_files=[ "res://.import/Paddle Sound.wav-f5108f5148c2b623c985c6a146fcb426.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
